@@ -285,5 +285,5 @@
     fi
 
     echo `echo -e "$(tput sgr0)"`;
-} 2>err;
+} 2>/dev/null;
 
