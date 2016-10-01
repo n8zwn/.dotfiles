@@ -1,6 +1,6 @@
 from pushbullet import Pushbullet
 
-api_key = 'o.MzwjL0OASrMHwKazQ0lxyoNxCgYvcv4R'
+api_key = 'api_key'
 
 pb = Pushbullet(api_key)
 
