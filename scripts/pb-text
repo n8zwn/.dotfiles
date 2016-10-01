@@ -1,0 +1,7 @@
+from auth import *
+
+phone_number = raw_input('Phone Number: ')
+
+text = raw_input('Text: ')
+
+pb.push_sms(device, phone_number, text)

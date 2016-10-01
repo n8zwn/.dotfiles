@@ -1,0 +1,7 @@
+from auth import *
+
+site_title = raw_input('Site title: ')
+
+site_link = raw_input('Link: ')
+
+pb.push_link(site_title, link)

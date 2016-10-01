@@ -1,0 +1,9 @@
+#Easy text pushbullet file
+
+from auth import *
+
+title = raw_input('Title: ')
+
+text = raw_input('Text: ')
+
+pb.push_note(TITLE, TEXT)
