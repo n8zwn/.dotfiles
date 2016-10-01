@@ -1,4 +1,4 @@
-#Easy text pushbullet file
+#!/usr/bin/env python
 
 from auth import *
 
