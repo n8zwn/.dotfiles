@@ -1,5 +1,5 @@
 [options]
-font            = tewi 11
+font            = Monospace 16
 allow_bold      = false
 audible_bell    = false
 
