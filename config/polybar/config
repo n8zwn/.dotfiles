@@ -51,7 +51,6 @@ font-2 = "Wuncon Siji:pixelsize=10;1"
 font-3 = fontawesome:pixelsize=13
 
 modules-left = i3 xwindow
-modules-center = spotify mpd
 modules-right = volume xkeyboard battery nm date powermenu
 
 tray-position = right
