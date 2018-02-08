@@ -155,7 +155,7 @@ bindsym $mod+l exec i3lock-fancy
 bindsym XF86MonBrightnessUp exec light -A 20 #increase brightness
 bindsym XF86MonBrightnessDown exec light -U 20 #decrease brightness
 bindsym XF86AudioRaiseVolume exec amixer -q sset Master 3%+ 
-bindsym XF86AudioRaiseVolume exec amixer -q sset Master 3%-
+bindsym XF86AudioLowerVolume exec amixer -q sset Master 3%-
 bindsym XF86AudioMute exec amixer -q set Master toggle
 
 
