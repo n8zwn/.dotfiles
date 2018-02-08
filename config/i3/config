@@ -30,7 +30,7 @@ font pango:monospace 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec termite
+bindsym $mod+Return exec alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -154,6 +154,9 @@ bindsym $mod+l exec i3lock-fancy
 
 bindsym XF86MonBrightnessUp exec light -A 20 #increase brightness
 bindsym XF86MonBrightnessDown exec light -U 20 #decrease brightness
+bindsym XF86AudioRaiseVolume exec —no-startup-id amixer -q sset Master 3%+ 
+bindsym XF86AudioLowerVolume exec —no-startup-id amixer -q sset Master 3%-
+
 
 exec --no-startup-id nm-applet
 exec --no-startup-id redshift-gtk
