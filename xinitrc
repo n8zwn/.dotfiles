@@ -41,4 +41,4 @@ sxhkd &
 battmon &
 
 # Start Window Manager
-exec bspwm
+exec i3
