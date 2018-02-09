@@ -25,4 +25,7 @@ Installation Prerequisites:
 3. `cd .dotfiles`
 4. `./scripts/install-pacaur`
 5. `./scripts/arch-deps.sh`
-6. `cp xinitrc ~/.xinitrc`
+6. `sudo pip instal peru`
+7. `peru sync`
+8. `./.makesym.sh`
+9. `cp xinitrc ~/.xinitrc`
