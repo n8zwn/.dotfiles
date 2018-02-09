@@ -29,3 +29,5 @@ Installation Prerequisites:
 7. `peru sync`
 8. `./.makesym.sh`
 9. `cp xinitrc ~/.xinitrc`
+
+After going through all these steps, log out and then log back in.
