@@ -4,3 +4,6 @@ pacaur -S alacritty-git rofi ttf-dejavu vim firefox xorg-server xorg-xinit pytho
 
 #Install fundle
 curl -sfL https://git.io/fundle-install | fish
+
+#Change shell to fish
+chsh -s /usr/bin/fish
