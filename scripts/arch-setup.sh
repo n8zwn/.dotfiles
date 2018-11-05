@@ -21,7 +21,7 @@ then
 	echo "Installing updates"
 	trizen -Syu
 	echo "Installing from pkgs file"
-	trizen -S "$(cat ~/.dotfiles/scripts/pkgs | sed 's/\\n/\n/g')" --noconfirm
+	trizen -S "$(cat ~/.dotfiles/scripts/pkgs | sed -e ':a' -e 'N' -e '$!ba' -e 's/\n/ /g')" --noconfirm
 fi	
 
 
