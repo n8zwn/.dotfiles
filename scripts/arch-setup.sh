@@ -1,14 +1,29 @@
 #!/usr/bin/env bash
 
+# Update Cached sudo credentials
+echo "Updating cached sudo credentials"
+sudo -v
+
 sudo cp ~/.dotfiles/scripts/bin/* /usr/bin/
 
-./install-pacaur
+echo "Installing pacaur"
+./install-trizen
 
 #Core dependencies
-sudo pacman -S xss-lock alacritty i3-gaps feh
+#sudo pacman -S xss-lock alacritty i3-gaps feh
 
 #AUR dependencies
-pacaur -S albert fundle-git fish ttf-dejavu vim firefox xorg-server xorg-xinit python-pip compton xterm network-manager-applet polybar pulseaudio keychain gnome-keyring i3lock-fancy-git 
+#pacaur -S albert fundle-git fish ttf-dejavu vim firefox xorg-server xorg-xinit python-pip compton xterm network-manager-applet polybar pulseaudio keychain gnome-keyring i3lock-fancy-git 
+
+
+if command -v trizen 
+then
+	echo "Installing updates"
+	sed -e ':a' -e 'N' -e '$!ba' -e 's/\n/ /g' pkgs
+	echo "Installing from pkgs file"
+	trizen -S "$(sed -e ':a' -e 'N' -e '$!ba' -e 's/\n/ /g' pkgs)" --noconfirm
+fi	
+
 
 #Usual Desktop folders
 mkdir -p ~/Documents ~/Downloads ~/Pictures ~/Desktop ~/git ~/Games ~/Iso
