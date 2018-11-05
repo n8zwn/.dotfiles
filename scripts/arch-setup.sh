@@ -24,7 +24,6 @@ then
 	while read PACKAGE
 	do
         	trizen -S "$PACKAGE" --noconfirm
-        	echo "butt"
 	done<pkgs
 fi	
 
