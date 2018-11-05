@@ -157,7 +157,7 @@ bindsym XF86MonBrightnessDown exec light -U 20 #decrease brightness
 bindsym XF86AudioRaiseVolume exec amixer -q sset Master 3%+ 
 bindsym XF86AudioLowerVolume exec amixer -q sset Master 3%-
 bindsym XF86AudioMute exec amixer -q set Master toggle
-
+bindsym mod4+l exec i3lock-fancy
 
 exec --no-startup-id nm-applet
 exec --no-startup-id redshift-gtk -l 40:111
@@ -165,6 +165,8 @@ exec --no-startup-id /usr/lib/gnome-settings-daemon/gnome-settings-daemon
 exec --no-startup-id nitrogen --restore
 exec --no-startup-id sh $HOME/.config/polybar/launch.sh
 exec --no-startup-id albert
+exec --no-startup-id xss-lock -- i3lock-fancy
+
 
 exec --no-startpu-id feh --bg-fill ~/Pictures/active-background.jpg
 
