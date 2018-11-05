@@ -6,7 +6,7 @@ sudo -v
 
 sudo cp ~/.dotfiles/scripts/bin/* /usr/bin/
 
-echo "Installing pacaur"
+echo "Installing trizen"
 ./install-trizen
 
 #Core dependencies
@@ -21,7 +21,7 @@ then
 	echo "Installing updates"
 	trizen -Syu
 	echo "Installing from pkgs file"
-	trizen -S "$(sed -e ':a' -e 'N' -e '$!ba' -e 's/\n/ /g' pkgs)" --noconfirm
+	trizen -S "$(cat ~/.dotfiles/scripts/pkgs | sed 's/\\n/\n/g')" --noconfirm
 fi	
 
 
