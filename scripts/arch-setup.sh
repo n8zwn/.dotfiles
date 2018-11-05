@@ -19,7 +19,7 @@ echo "Installing pacaur"
 if command -v trizen 
 then
 	echo "Installing updates"
-	sed -e ':a' -e 'N' -e '$!ba' -e 's/\n/ /g' pkgs
+	trizen -Syu
 	echo "Installing from pkgs file"
 	trizen -S "$(sed -e ':a' -e 'N' -e '$!ba' -e 's/\n/ /g' pkgs)" --noconfirm
 fi	
