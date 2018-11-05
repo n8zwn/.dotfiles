@@ -22,9 +22,9 @@ Installation Prerequisites:
 
 1. `cd ~`
 2. `git clone https://github.com/heywoodlh/.dotfiles`
-3. `cd .dotfiles`
-4. `./scripts/install-pacaur`
-5. `./scripts/arch-deps.sh`
+3. `cd .dotfiles/scripts`
+4. `./arch-setup.sh`
+5. `cd ../`
 6. `sudo pip instal peru`
 7. `peru sync`
 8. `./.makesym.sh`
