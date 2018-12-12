@@ -19,3 +19,8 @@ pulseaudio
 keychain
 gnome-keyring
 i3lock-fancy-git
+zenity
+jq
+xclip
+rofi
+bitwarden-cli

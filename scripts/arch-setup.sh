@@ -35,7 +35,7 @@ mkdir -p ~/Documents ~/Downloads ~/Pictures ~/Desktop ~/git ~/Games ~/Iso
 cp ~/.dotfiles/wallpapers/active-background.jpg ~/Pictures/active-background.jpg
 
 #Screensaver stuff
-sudo cp ~/.dotfiles/config/systemd/user/suspend@.service /etc/systemd/system/
+sudo cp ~/.dotfiles/systemd/user/suspend@.service /etc/systemd/system/
 sudo systemctl enable suspend@"$USER".service
 
 #Change shell to fish
