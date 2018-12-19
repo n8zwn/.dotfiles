@@ -43,7 +43,8 @@ clear
 echo 'Set fish as default shell? (y/n)'
 read RESPONSE
 case "$RESPONSE" in
-    [yY]) chsh -s /usr/bin/fish ;;
+    [yY] | [yY][eE][sS]) chsh -s /usr/bin/fish && cat arch-fish-config.txt >> ~/.config/fish/config.fish ;;
+    [nN] | [nN][oO]) cat arch-bash-config.txt >> ~/.bash_profile;; 
 esac
 
 clear
