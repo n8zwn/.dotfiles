@@ -20,5 +20,5 @@ for file in $files; do
     then
         mv ~/.$file ~/.dotfiles_old/
     fi
-    ln -s $dir/$file ~/.$file
+    ln -sf $dir/$file ~/.$file
 done
