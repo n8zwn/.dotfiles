@@ -39,4 +39,16 @@ sudo cp ~/.dotfiles/systemd/user/suspend@.service /etc/systemd/system/
 sudo systemctl enable suspend@"$USER".service
 
 #Change shell to fish
-chsh -s /usr/bin/fish
+clear
+echo 'Set fish as default shell? (y/n)'
+read RESPONSE
+case "$RESPONSE" in
+    [yY]) chsh -s /usr/bin/fish ;;
+esac
+
+clear
+echo 'Install open-vm-tools? (y/n)'
+read RESPONSE
+case "$RESPONSE" in
+    [yY]) sudo pacman -S open-vm-tools open-vm-tools-desktop && sudo systemctl enable vmtoolsd.service && sudo systemctl start vmtoolsd.service;;
+esac
