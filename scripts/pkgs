@@ -23,4 +23,8 @@ zenity
 jq
 xclip
 rofi
+bitwarden
 bitwarden-cli
+wavebox-bin
+snapd
+veracrypt

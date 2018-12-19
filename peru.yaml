@@ -1,23 +1,23 @@
 imports:
-  base16-shell: ~/.config/base16-shell
-  fish-pure-prompt: ~/.config/fish/functions
+  base16-shell: .config/base16-shell
+  fish-pure-prompt: .config/fish/functions
 
-  vim-airline: ~/.vim/bundle/airline
-  vim-airline-themes: ~/.vim/bundle/airline-themes
-  vim-base16: ~/.vim/bundle/base16-vim
-  vim-fish: ~/.vim
-  vim-gitgutter: ~/.vim/bundle/vim-gitgutter
-  vim-markdown: ~/.vim/bundle/vim-markdown
-  vim-pathogen: ~/.vim
-  vim-pydocstring: ~/.vim/bundle/pydocstring
-  vim-python-mode: ~/.vim/bundle/python-mode
-  vim-sensible: ~/.vim/bundle/sensible
-  vim-sudoedit: ~/.vim/bundle/sudoedit
-  vim-supertab: ~/.vim/bundle/supertab
-  vim-syntastic: ~/.vim/bundle/syntastic
+  vim-airline: .vim/bundle/airline
+  vim-airline-themes: .vim/bundle/airline-themes
+  vim-base16: .vim/bundle/base16-vim
+  vim-fish: .vim
+  vim-gitgutter: .vim/bundle/vim-gitgutter
+  vim-markdown: .vim/bundle/vim-markdown
+  vim-pathogen: .vim
+  vim-pydocstring: .vim/bundle/pydocstring
+  vim-python-mode: .vim/bundle/python-mode
+  vim-sensible: .vim/bundle/sensible
+  vim-sudoedit: .vim/bundle/sudoedit
+  vim-supertab: .vim/bundle/supertab
+  vim-syntastic: .vim/bundle/syntastic
 
-  do-scripts: ~/.do-scripts
-  bw-scripts: ~/.bw-scripts
+  do-scripts: .do-scripts
+  bw-scripts: .bw-scripts
 
 
 git module base16-shell:
