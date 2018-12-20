@@ -51,5 +51,5 @@ clear
 echo 'Install open-vm-tools? (y/n)'
 read RESPONSE
 case "$RESPONSE" in
-    [yY]) sudo pacman -S open-vm-tools open-vm-tools-desktop && sudo systemctl enable vmtoolsd.service && sudo systemctl start vmtoolsd.service;;
+    [yY]) sudo pacman -S open-vm-tools && sudo systemctl enable vmtoolsd.service && sudo systemctl start vmtoolsd.service;;
 esac
