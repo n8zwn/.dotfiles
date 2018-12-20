@@ -40,18 +40,10 @@ sudo systemctl enable suspend@"$USER".service
 
 #Change shell to fish
 clear
-echo 'Set fish as default shell? (y/n)'
-read RESPONSE
-case "$RESPONSE" in
-    [yY] | [yY][eE][sS]) FISH='True';;
-esac
-
-if [[ "$FISH" == 'True' ]]
+chsh -s /usr/bin/fish
+if [[ -f arch-fish-config.txt ]]
 then
-	chsh -s /usr/bin/fish
-	cat arch-fish-config.txt >> ~/.config/fish/config.fish
-else
-	cat arch-bash-config.txt >> ~/.bash_profile
+	cp arch-fish-config.txt ~/.config/fish/config.fish
 fi
 
 clear
