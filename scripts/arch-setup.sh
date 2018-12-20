@@ -43,13 +43,20 @@ clear
 echo 'Set fish as default shell? (y/n)'
 read RESPONSE
 case "$RESPONSE" in
-    [yY] | [yY][eE][sS]) chsh -s /usr/bin/fish && cat arch-fish-config.txt >> ~/.config/fish/config.fish ;;
-    [nN] | [nN][oO]) cat arch-bash-config.txt >> ~/.bash_profile;; 
+    [yY] | [yY][eE][sS]) FISH='True';;
 esac
+
+if [[ "$FISH" == 'True' ]]
+then
+	chsh -s /usr/bin/fish
+	cat arch-fish-config.txt >> ~/.config/fish/config.fish
+else
+	cat arch-bash-config.txt >> ~/.bash_profile
+fi
 
 clear
 echo 'Install open-vm-tools? (y/n)'
 read RESPONSE
 case "$RESPONSE" in
-    [yY]) sudo pacman -S open-vm-tools && sudo systemctl enable vmtoolsd.service && sudo systemctl start vmtoolsd.service;;
+    [yY] | [yY][eE][sS]) sudo pacman -S open-vm-tools && sudo systemctl enable vmtoolsd.service && sudo systemctl start vmtoolsd.service;;
 esac
