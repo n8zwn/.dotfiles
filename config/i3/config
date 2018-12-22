@@ -30,7 +30,7 @@ font pango:monospace 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec kitty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -167,7 +167,7 @@ exec --no-startup-id albert
 exec --no-startup-id xss-lock -- i3lock-fancy
 
 
-exec --no-startpu-id feh --bg-fill ~/Pictures/active-background.jpg
+exec --no-startup-id feh --bg-fill ~/Pictures/active-background.jpg
 
 exec ssh-agent /usr/bin/fish
 
