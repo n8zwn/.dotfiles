@@ -1,5 +1,5 @@
 i3-gaps
-alacritty
+termite
 kitty
 xss-lock
 feh
@@ -29,3 +29,4 @@ bitwarden-cli
 wavebox-bin
 snapd
 veracrypt
+signal-desktop-bin
