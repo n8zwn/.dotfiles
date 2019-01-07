@@ -7,3 +7,5 @@ if test -f ~/.bw_session
 else
     set BW_SESSION ''
 end
+
+umask 077
