@@ -1,1 +1,0 @@
-/Users/heywoodlh/.dotfiles/bashrc
