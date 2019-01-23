@@ -8,4 +8,10 @@ else
     set BW_SESSION ''
 end
 
-umask 077
+umask 027
+
+if status --is-login
+  if test -z "$DISPLAY" -a $XDG_VTNR = 1
+    exec startx -- -keeptty >~/.xorg.log ^&1
+  end
+end
