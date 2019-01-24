@@ -24,8 +24,7 @@ zenity
 jq
 xclip
 rofi
-lightdm
-
+lxde
 wavebox-bin
 snapd
 veracrypt
