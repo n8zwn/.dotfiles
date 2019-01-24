@@ -56,5 +56,5 @@ clear
 echo 'Install open-vm-tools? (y/n)'
 read RESPONSE
 case "$RESPONSE" in
-    [yY] | [yY][eE][sS]) sudo pacman -S open-vm-tools --noconfirm && sudo systemctl enable vmtoolsd.service && sudo systemctl start vmtoolsd.service;;
+    [yY] | [yY][eE][sS]) sudo pacman -S open-vm-tools xf86-video-vmware --noconfirm && sudo systemctl enable vmtoolsd.service && sudo systemctl start vmtoolsd.service;;
 esac
