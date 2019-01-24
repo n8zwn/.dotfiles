@@ -41,6 +41,12 @@ sudo systemctl enable suspend@"$USER".service
 #Enable display manager
 sudo systemctl enable lxdm.service
 
+#Enable sxhkd
+mkdir -p ~/.config/systemd/user/
+cp ~/.dotfiles/systemd/sxhkd.service ~/.config/systemd/user/
+systemctl --user enable sxhkd.service
+systemctl --user start sxhkd.service
+
 #Change shell to fish
 clear
 chsh -s /usr/bin/fish
