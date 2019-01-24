@@ -8,10 +8,10 @@
 #
 
 control + super + s
-    /home/heywoodlh/.bw-scripts/slab.sh
+    ~/.bw-scripts/slab.sh
 
 control + super + 2
-    /home/heywoodlh/.bw-scripts/2fa.sh
+    ~/.bw-scripts/2fa.sh
 
 control + super + u
-    /home/heywoodlh/.bw-scripts/unlock.sh
+    ~/.bw-scripts/unlock.sh
