@@ -38,8 +38,8 @@ cp ~/.dotfiles/wallpapers/active-background.jpg ~/Pictures/active-background.jpg
 sudo cp ~/.dotfiles/systemd/user/suspend@.service /etc/systemd/system/
 sudo systemctl enable suspend@"$USER".service
 
-#Enable lightdm
-sudo systemctl enable lightdm.service
+#Enable display manager
+sudo systemctl enable lxde.service
 
 #Change shell to fish
 clear
