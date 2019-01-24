@@ -49,6 +49,9 @@ then
 	cp arch-fish-config.txt ~/.config/fish/config.fish
 fi
 
+#Install virtualfish
+sudo pip3 install virtualfish
+
 clear
 echo 'Install open-vm-tools? (y/n)'
 read RESPONSE
