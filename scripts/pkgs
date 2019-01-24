@@ -24,10 +24,11 @@ zenity
 jq
 xclip
 rofi
-bitwarden
-bitwarden-cli
+lightdm
+
 wavebox-bin
 snapd
 veracrypt
 signal-desktop-bin
-lightdm
+bitwarden
+bitwarden-cli
