@@ -39,7 +39,7 @@ sudo cp ~/.dotfiles/systemd/user/suspend@.service /etc/systemd/system/
 sudo systemctl enable suspend@"$USER".service
 
 #Enable display manager
-sudo systemctl enable lxde.service
+sudo systemctl enable lxdm.service
 
 #Change shell to fish
 clear
