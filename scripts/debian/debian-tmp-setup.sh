@@ -13,8 +13,8 @@ sudo cp ~/.dotfiles/scripts/bin/* /usr/bin/
 #pacaur -S albert fundle-git fish ttf-dejavu vim firefox xorg-server xorg-xinit python-pip compton xterm network-manager-applet polybar pulseaudio keychain gnome-keyring i3lock-fancy-git 
 
 
-echo "Installing updates"
-sudo apt-get update; sudo apt-get dist-upgrade -y
+echo "Updating cache"
+sudo apt-get update
 echo "Installing from pkgs file"
 while read PACKAGE
 do
