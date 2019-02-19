@@ -1,0 +1,11 @@
+snapd
+python3-pip
+fish
+vim
+firefox
+zenity
+jq
+xclip
+rofi
+sxhkd
+tigervnc-viewer
