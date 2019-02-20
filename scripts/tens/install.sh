@@ -2,7 +2,7 @@
 
 PWD="$(pwd)"
 cd /home/guest/
-NEW_PATH='/home/guest/bin/'
+NEW_PATH='/home/guest/bin'
 mkdir -p "$NEW_PATH"
 echo PATH="$PATH":"$NEW_PATH":/home/guest/.local/bin >> /home/guest/.profile
 
