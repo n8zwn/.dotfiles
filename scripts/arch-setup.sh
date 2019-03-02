@@ -38,6 +38,22 @@ cp ~/.dotfiles/wallpapers/active-background.jpg ~/Pictures/active-background.jpg
 sudo cp ~/.dotfiles/systemd/user/suspend@.service /etc/systemd/system/
 sudo systemctl enable suspend@"$USER".service
 
+#Install desktop environment (mate)
+
+echo "Install desktop environment? (Mate)"
+case "$RESPONSE" in
+    [yY] | [yY][eE][sS]) DESKTOP_ENVIRONMENT='TRUE';;
+esac
+
+if [[ "$DESKTOP_ENVIRONMENT" == 'TRUE' ]]
+then
+        echo "Installing from desktop pkgs file"
+        while read PACKAGE
+        do
+                trizen -S "$PACKAGE" --noconfirm
+        done<arch-desktop-pkgs
+fi
+
 #Enable display manager
 sudo systemctl enable lxdm.service
 
