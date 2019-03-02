@@ -33,3 +33,5 @@ veracrypt
 signal-desktop-bin
 bitwarden
 bitwarden-cli
+wireguard-tools
+wireguard-arch
