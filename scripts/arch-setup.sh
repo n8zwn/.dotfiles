@@ -74,6 +74,12 @@ fi
 #Install virtualfish
 sudo pip3 install virtualfish
 
+#Enable docker
+sudo systemctl enable docker.service
+sudo systemctl start docker.service
+sudo usermod -aG docker $USER
+
+#Install open-vm-tools
 clear
 echo 'Install open-vm-tools? (y/n)'
 read RESPONSE
