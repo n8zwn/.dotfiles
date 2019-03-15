@@ -4,8 +4,6 @@
 echo "Updating cached sudo credentials"
 sudo -v
 
-sudo cp ~/.dotfiles/scripts/bin/* /usr/bin/
-
 #Core dependencies
 #sudo pacman -S xss-lock alacritty i3-gaps feh
 
@@ -58,7 +56,13 @@ sudo pip3 install virtualfish
 clear
 echo 'Bitwarden server URL: '
 read BW_SERVER
-bw config server "$BW_SERVER"
+/snap/bin/bw config server "$BW_SERVER"
 
-bw login --raw >> ~/.bw_session
+/snap/bin/bw login --raw >> ~/.bw_session
 (crontab -l ; echo "*/30 * * * * rm ~/.bw_session")| crontab -
+
+#Install docker
+sudo apt-get install docker.io -y
+sudo systemctl enable docker.service
+sudo systemctl start docker.service
+sudo usermod -aG docker "$USER"
