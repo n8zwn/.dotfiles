@@ -6,7 +6,7 @@ function arch-linux
     if test ! -f $arch_dir/Vagrantfile
         vagrant init archlinux/archlinux
         rm $arch_dir/Vagrantfile
-        curl 'https://gist.githubusercontent.com/heywoodlh/e24dc94eee7d461c215faa944af13bd7/raw/fbbc716c7a2af89753be13ba4727397cc6f2e123/arch-vagrant' -o $arch_dir/Vagrantfile
+        curl 'https://gist.githubusercontent.com/heywoodlh/e24dc94eee7d461c215faa944af13bd7/raw/b0842ecab6340484a84c5f3945dae01fd7acdf8f/arch-vagrant' -o $arch_dir/Vagrantfile
     end
     vagrant up
     vagrant ssh
