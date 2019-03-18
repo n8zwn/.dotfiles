@@ -3,16 +3,10 @@ function kali
     set kali_dir ~/.vagrant/kali
     mkdir -p $kali_dir
     cd $kali_dir
-    if test -f $kali_dir/Vagrantfile
-        if test (grep '#   vb.gui = true' $kali_dir/Vagrantfile)
-            sed -i -e 's/#   vb.gui = true/   vb.gui = false/g' $kali_dir/Vagrantfile
-            vagrant reload
-        end
-    else
+    if test ! -f $kali_dir/Vagrantfile
         vagrant init offensive-security/kali-linux
-        if test (grep '#   vb.gui = true' $kali_dir/Vagrantfile)
-            sed -i -e 's/#   vb.gui = true/   vb.gui = false/g' $kali_dir/Vagrantfile
-        end
+        rm $kali_dir/Vagrantfile
+        curl 'https://gist.githubusercontent.com/heywoodlh/ab3706570b1ad6da233053e27527060d/raw/3f394d22c79bb97420d193d1b27b14071633fd0b/kali-vagrantfile' -o $kali_dir/Vagrantfile
     end
     vagrant up
     vagrant ssh

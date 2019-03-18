@@ -1,3 +1,5 @@
+curl
+wget
 snapd
 python3-pip
 fish
