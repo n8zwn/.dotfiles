@@ -18,8 +18,8 @@ echo "Installing trizen"
 
 if command -v trizen 
 then
-	echo "Installing updates"
-	trizen -Syu
+	echo "Updating repository cache"
+	trizen -Sy
 	echo "Installing from pkgs file"
 	while read PACKAGE
 	do
