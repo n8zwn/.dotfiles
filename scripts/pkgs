@@ -6,7 +6,6 @@ fish
 ttf-dejavu
 vim
 keychain
-gnome-keyring
 jq
 arch-wiki-docs
 bitwarden-cli
