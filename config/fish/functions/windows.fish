@@ -6,7 +6,7 @@ function windows
     if test ! -f $windows_dir/Vagrantfile
         vagrant init Microsoft/EdgeOnWindows10 --box-version 1.0
         rm $windows_dir/Vagrantfile
-        curl 'https://gist.githubusercontent.com/heywoodlh/96682f1694dac4f47271febd7592a8e7/raw/4226be1cbdcc86880f430f3bc061f2c894cb40eb/windows-vagrant' -o $windows_dir/Vagrantfile
+        curl 'https://gist.githubusercontent.com/heywoodlh/96682f1694dac4f47271febd7592a8e7/raw/c6459551d042738a1da2182cbf1f6a58a3f4d08d/windows-vagrant' -o $windows_dir/Vagrantfile
     end
     vagrant up
     vagrant powershell
