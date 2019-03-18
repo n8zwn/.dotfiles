@@ -30,7 +30,7 @@ fi
 
 #Change shell to fish
 clear
-chsh -s /usr/bin/fish
+sudo chsh -s /usr/bin/fish "$USER"
 if [[ -f arch-fish-config.txt ]]
 then
 	cp arch-fish-config.txt ~/.config/fish/config.fish
