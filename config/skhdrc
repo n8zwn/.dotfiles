@@ -42,7 +42,13 @@ shift + alt - 6 : chunkc tiling::window --send-to-desktop 6
 
 # custom hotkeys
 
-ctrl + cmd - s : /opt/bw-scripts/slab.sh
-ctrl + cmd - 2 : /opt/bw-scripts/2fa.sh
-ctrl + cmd - u : /opt/bw-scripts/unlock.sh
-ctrl + alt - t : kitty
+:: passthrough
+ctrl + cmd - p ; passthrough
+passthrough < ctrl + cmd - p ; default
+
+ctrl + cmd - s : ~/.bw-scripts/slab.sh
+ctrl + cmd - 2 : ~/.bw-scripts/2fa.sh
+ctrl + cmd - u : ~/.bw-scripts/unlock.sh
+ctrl + alt - t : /Users/heywoodlh/git/scripts/kitty.sh
+
+cmd - l : /System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend
