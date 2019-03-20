@@ -10,6 +10,5 @@ function arch-linux
     end
     vagrant up
     vagrant ssh
-    vagrant suspend
     cd $working_dir
 end
