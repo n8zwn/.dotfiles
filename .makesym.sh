@@ -27,3 +27,5 @@ for file in $files; do
     fi
     ln -sf $dir/$file ~/.$file
 done
+
+cp config.h ~/.st-term/config.h
