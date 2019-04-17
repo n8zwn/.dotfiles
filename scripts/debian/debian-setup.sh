@@ -46,8 +46,8 @@ clear
 chsh -s /usr/bin/fish
 
 #Install kitty
-curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
-sudo cp ~/.local/kitty.app/share/applications/kitty.desktop /usr/local/share/applications
+#curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
+#sudo cp ~/.local/kitty.app/share/applications/kitty.desktop /usr/local/share/applications
 
 #Install virtualfish
 sudo pip3 install virtualfish
