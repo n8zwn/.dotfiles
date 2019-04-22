@@ -26,3 +26,15 @@ chmod +x /tmp/bw-setup.sh
 /tmp/bw-setup.sh
 
 rm /tmp/bw-setup.sh
+
+if uname -a | grep -q -i 'linux'
+then
+	WORKING_DIR="$(pwd)"
+	cp ~/.dotfiles/config.h ~/.st-term/config.h
+	cd ~/.st-term/
+	make
+	sudo cp ~/.st-term/st /usr/local/bin/st
+	
+	mkdir -p ~/.local/share/applications/
+	cp ~/.dotfiles/desktop/st.desktop ~/.local/share/applications/st.desktop
+fi

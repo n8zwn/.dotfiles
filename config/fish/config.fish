@@ -8,4 +8,4 @@ else
     set BW_SESSION ''
 end
 
-umask 027
+umask 022

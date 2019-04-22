@@ -18,7 +18,7 @@ i3lock-fancy-git
 compton
 rofi
 xclip
-lxdm
+ly
 zenity
 sxhkd
 wavebox-bin
@@ -31,3 +31,4 @@ feh
 albert
 firefox
 gnome-keyring
+scrot
