@@ -38,7 +38,7 @@ cp ~/.dotfiles/wallpapers/active-background.jpg ~/Pictures/active-background.jpg
 sudo cp ~/.dotfiles/systemd/user/suspend@.service /etc/systemd/system/
 sudo systemctl enable suspend@"$USER".service
 
-#Install desktop environment (mate)
+#Install desktop environment (gnome)
 
 echo "Installing from desktop pkgs file"
 while read PACKAGE
@@ -47,7 +47,7 @@ do
 done<arch-desktop-pkgs
 
 #Enable display manager
-sudo systemctl enable ly.service
+sudo systemctl enable gdm.service
 
 #Enable sxhkd
 mkdir -p ~/.config/systemd/user/
