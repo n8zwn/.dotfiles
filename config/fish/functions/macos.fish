@@ -4,7 +4,7 @@ function macos
     mkdir -p $macos_dir
     cd $macos_dir
     if test ! -f $macos_dir/Vagrantfile
-        vagrant init macoslinux/macoslinux
+        vagrant init yzgyyang/macOS-10.14
     end
     vagrant up
     vagrant ssh
