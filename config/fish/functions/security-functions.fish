@@ -38,6 +38,10 @@ function kali-docker
   docker run -it --rm --net host --privileged -e DISPLAY -v $HOME/.Xauthority:/root/.Xauthority booyaabes/kali-linux-full /bin/bash
 end
 
+function masscan
+  docker run --rm --net host -v (pwd):/data --privileged booyaabes/kali-linux-full masscan $argv
+end
+
 function msfconsole
   docker run -it --rm --net host  -v ~/.msf4:/root/.msf4 -v /tmp/msf:/tmp/data booyaabes/kali-linux-full msfconsole $argv
 end
