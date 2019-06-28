@@ -9,3 +9,5 @@ else
 end
 
 umask 022
+
+source ~/.dotfiles/config/fish/functions/security-functions.fish
