@@ -9,7 +9,7 @@ function weechat
       if test -z ~/.weechat-docker
         mkdir -p ~/.weechat-docker
       end
-      docker run -it --name weechat -e UID=1000 -e GID=1000 -v ~/.weechat-docker:/weechat jkaberg/weechat $argv
+      docker run -it --name weechat -e UID=1000 -e GID=1000 -v ~/.weechat-docker:/weechat/.weechat jkaberg/weechat $argv
     end
   end
 end
