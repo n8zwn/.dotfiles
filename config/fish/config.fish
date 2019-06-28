@@ -10,4 +10,4 @@ end
 
 umask 022
 
-source ~/.dotfiles/config/fish/functions/security-functions.fish
+source ~/.config/fish/functions/security-functions.fish
