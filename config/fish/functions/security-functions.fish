@@ -34,6 +34,10 @@ function hping3
   docker run -it --rm -w /data -v (pwd):/data booyaabes/kali-linux-full hping3 $argv
 end
 
+function hydra
+  docker run --rm --net host -v (pwd):/data --privileged booyaabes/kali-linux-full hydra $argv
+end
+
 function kali-docker
   docker run -it --rm --net host --privileged -e DISPLAY -v $HOME/.Xauthority:/root/.Xauthority booyaabes/kali-linux-full /bin/bash
 end
