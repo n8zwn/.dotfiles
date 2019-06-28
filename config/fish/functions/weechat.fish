@@ -3,7 +3,7 @@ function weechat
     docker exec -it weechat weechat 
   else
     if docker ps -a | grep -q weechat
-      docker start weechat
+      docker start weechat > /dev/null
       docker exec -it weechat weechat
     else
       if test -z ~/.weechat-docker
