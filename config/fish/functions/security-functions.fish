@@ -90,6 +90,10 @@ function socat
   docker run --rm -w /data -v (pwd):/data --net host booyaabes/kali-linux-full socat $argv
 end
 
+function theharvester
+  docker run --rm -v (pwd):/data booyaabes/kali-linux-full theharvester $argv
+end
+
 function tshark
   docker run --rm -w /data -v (pwd):/data --net host --privileged booyaabes/kali-linux-full tshark $argv
 end
