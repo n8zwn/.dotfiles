@@ -91,7 +91,7 @@ function socat
 end
 
 function telnet
-  docker run --rm mikesplain/telnet telnet $argv
+  docker run --rm mikesplain/telnet $argv
 end
 
 function theharvester
