@@ -91,7 +91,7 @@ function socat
 end
 
 function telnet
-  docker run --rm booyaabes/kali-linux-full telnet $argv
+  docker run --rm mikesplain/telnet telnet $argv
 end
 
 function theharvester
