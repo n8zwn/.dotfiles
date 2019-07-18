@@ -1,4 +1,4 @@
-function ubuntu-poweroff
+function ansible-dev-poweroff
     set working_dir (pwd)
     set ubuntu_dir ~/.vagrant/ansible-dev
     cd $ubuntu_dir
